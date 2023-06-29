@@ -1,0 +1,11 @@
+export { default as CartIcon } from "./cart";
+export { default as LogoIcon } from "./logo";
+export { default as PhoneLogo } from "./phone";
+export { default as VcontactIcon } from "./vk";
+export { default as TwitterIcon } from "./twitter";
+export { default as FacebookIcon } from "./facebook";
+export { default as ArrowIcon } from "./arrowIcon";
+export { default as BoxIcon } from "./boxIcon";
+export { default as EvaluateIcon } from "./evaluate";
+export { default as TrueIcon } from "./trueIcon";
+export { default as CloseIcon } from "./closeIcon";

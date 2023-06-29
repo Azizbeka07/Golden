@@ -1,0 +1,59 @@
+[
+  {
+    "id": "0",
+    "inCash": true,
+    "name": "Дверной Замок Golden Soft для отеля",
+    "currentPrice": "33 000₽",
+    "oldPrice": "37 000₽",
+    "category": "forOffice",
+    "slug": "test",
+    "image": "https://t2.gstatic.com/images?q=tbn:ANd9GcTk3XXW5WYtbtkg6kEt8ck8CbOficd3wNFmBEZnjKGTo1WThNtN"
+  },
+  {
+    "id": "1",
+    "inCash": false,
+    "name": "Вариативный замок Golden Soft для отеля",
+    "currentPrice": "7 000₽",
+    "oldPrice": "8 000₽",
+    "category": "forHome",
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWMD-RBHXDv45hA2v3hXqEfWlHEQqvsInyF9GCeRceL0BjHT9P"
+  },
+  {
+    "id": "2",
+    "inCash": false,
+    "name": "Дверной Замок Golden Soft для офиса",
+    "currentPrice": "33 000₽",
+    "oldPrice": "39 000₽",
+    "category": "forFlat",
+    "slug": "hi",
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiIXQUelH-OLnU0-6GISYAfZ1EFEESsExQQNu07ZPrANG_uG1P"
+  },
+  {
+    "id": "3",
+    "inCash": false,
+    "name": "Дверной Замок Golden Soft для офиса",
+    "currentPrice": "9 000₽",
+    "oldPrice": "12 000₽",
+    "category": "forWork",
+    "slug": "door-lock-golden-soft-for-office",
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTB_uyjXwkWciWfYjULb0BE-497uvyL4k7X79CbpkII8goNonM"
+  },
+  {
+    "id": "4",
+    "inCash": false,
+    "name": "Дверной Замок Golden Soft для офиса",
+    "currentPrice": "33 000₽",
+    "oldPrice": "39 000₽",
+    "category": "forFlat",
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiIXQUelH-OLnU0-6GISYAfZ1EFEESsExQQNu07ZPrANG_uG1P"
+  },
+  {
+    "id": "5",
+    "inCash": false,
+    "name": "Дверной Замок Golden Soft для офиса",
+    "currentPrice": "9 000₽",
+    "oldPrice": "12 000₽",
+    "category": "forFlat",
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTB_uyjXwkWciWfYjULb0BE-497uvyL4k7X79CbpkII8goNonM"
+  }
+]
