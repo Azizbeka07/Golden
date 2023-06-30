@@ -33,8 +33,8 @@ const InfoTitle = styled.h3`
 `;
 
 const PriceBoard = styled.div`
-    ${Flex.alignCenter}
-    gap: 12px;
+    ${Flex.spaceBetween}
+    gap: 8px;
     margin-top: 10px;
 `;
 

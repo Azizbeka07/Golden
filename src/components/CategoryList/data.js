@@ -1,7 +1,7 @@
-import image from "assets/images/PopularProducts/product_1.png";
-import image_2 from "assets/images/PopularProducts/product_2.png";
-import image_3 from "assets/images/PopularProducts/product_3.png";
-import image_4 from "assets/images/PopularProducts/product_4.png";
+import image   from "assets/images/HomePgaesCategory/home-page-category_1.png";
+import image_2 from "assets/images/HomePgaesCategory/home-page-category_2.png";
+import image_3 from "assets/images/HomePgaesCategory/home-page-category_3.png";
+import image_4 from "assets/images/HomePgaesCategory/home-page-category_4.png";
 
 const categoryListData = [
     {
