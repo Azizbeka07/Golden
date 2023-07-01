@@ -9,7 +9,10 @@ import MainContext from "reducer/CartContext";
 import * as S from "./style";
 
 const ProductCard = ({ data, select, like }) => {
+  console.log(like);
   const { inCash, image, name, currentPrice, oldPrice, id, mark } = data;
+  const { addToCart, removeFromCart, addToLike, removeFromLike } =
+    useContext(MainContext);
 
   const cartToggle = () => {
     return select ? removeFromCart(id) : addToCart(data);
@@ -17,8 +20,6 @@ const ProductCard = ({ data, select, like }) => {
   const likeToggle = () => {
     return like ? removeFromLike(id) : addToLike(data);
   };
-  const { addToCart, removeFromCart, addToLike, removeFromLike } =
-    useContext(MainContext);
   return (
     <S.ProductCardWrapper>
       <S.ProductImageLink to={`/product/detail/${id}`}>
@@ -39,7 +40,11 @@ const ProductCard = ({ data, select, like }) => {
           <S.MainPrice>{currentPrice}</S.MainPrice>
           <S.OldPrice>{oldPrice}</S.OldPrice>
           <IconButton onClick={likeToggle}>
-            {like ? <FavoriteIcon color="error" /> : <FavoriteBorderIcon color="error" />}
+            {like ? (
+              <FavoriteIcon color="error" />
+            ) : (
+              <FavoriteBorderIcon color="error" />
+            )}
           </IconButton>
           <IconButton onClick={cartToggle}>
             {select ? (

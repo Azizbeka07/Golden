@@ -1,6 +1,6 @@
 import React from "react";
-import * as S from "./style";
 import { Link } from "react-router-dom";
+import * as S from "./style";
 
 const CatalogListItems = ({ image, text, type }) => {
     return (

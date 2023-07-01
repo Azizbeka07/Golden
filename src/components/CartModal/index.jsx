@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { Colors, Flex } from "utils/index";
 import { CloseIcon } from "assets/images/svgIcons";
 import ProductListItems from "./ProductListItems";
+import { adaptiveValue } from "utils/variable";
 
 export default function CartModal({ cartModal, handleModal, data }) {
     console.log(data);
@@ -41,8 +42,9 @@ const ModalBox = styled(Box)`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 836px;
+    ${adaptiveValue("max-width", 816, 343)}
     width: 100%;
+    height: 500px;
     overflow-y: auto;
     background-color: #fff;
 `;
@@ -57,6 +59,12 @@ const ModalBoxHeader = styled.div`
     ${Flex.spaceBetween}
     border-bottom: 1px solid ${Colors.borderColor};
     padding: 16px 40px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+    background-color: ${Colors.light};
 `;
 
 const HeaderTitle = styled.h2`
@@ -67,12 +75,19 @@ const HeaderTitle = styled.h2`
 `;
 
 const ModalBoxBody = styled.div`
-    padding: 16px 40px;
+     padding: 16px 40px;
+    height: 430px;
+    display: ${({ isEmpty }) => (isEmpty ? "flex" : "block")};
+    align-items: ${({ isEmpty }) => isEmpty && "center"};
+    justify-content: ${({ isEmpty }) => isEmpty && "center"};
+    position: static;
+    z-index: -1002;
 `;
 
 const ProductList = styled.ul`
-    ${Flex.spaceBetween};
+    ${Flex.spaceBetween}; 
     flex-direction: column;
     width: 100%;
     column-gap: 30px;
+    row-gap: 30px;
 `;
