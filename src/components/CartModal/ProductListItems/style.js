@@ -6,6 +6,10 @@ const ProductWrapper = styled.div`
   ${Flex.spaceBetween}
   width: 100%;
   height: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 20px ;
+  }
 `;
 const ImageWrapper = styled.div`
   width: 136px;
@@ -20,10 +24,12 @@ const ImageWrapper = styled.div`
 `;
 
 const ProductInfoWrapper = styled.div`
-  ${Flex.spaceBetween}
+  ${Flex.justFlex}
 `;
 const ProductInfo = styled.div`
-  ${Flex.spaceBetween}
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
   flex-direction: column;
   gap: 30px;
   height: 100%;
@@ -36,6 +42,7 @@ const ProductInfoTitle = styled.h3`
 
 const BtnGroup = styled.div`
   ${Flex.alignCenter};
+  text-align: start;
   gap: 8px;
 `;
 
@@ -62,7 +69,7 @@ const ProductAction = styled.div`
 
 const Actions = styled.div`
   ${Flex.justFlex};
-  gap: 30px;
+  gap: 60px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -81,6 +88,10 @@ const CurrentPrice = styled.p`
   line-height: 26px;
 `;
 
+const ProductWrapperGroup = styled.div`
+  display: flex;
+`;
+
 export {
   ProductWrapper,
   ImageWrapper,
@@ -94,4 +105,5 @@ export {
   Actions,
   DeleteText,
   CurrentPrice,
+  ProductWrapperGroup,
 };

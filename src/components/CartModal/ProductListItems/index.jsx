@@ -10,6 +10,7 @@ const ProductListItems = ({ product }) => {
   const { removeFromCart } = useContext(MainContext);;
   return (
     <S.ProductWrapper>
+      <S.ProductWrapperGroup>
       <Link to={`/product/detail/${id}`}>
         <S.ImageWrapper>
           <img src={image} alt={name} />
@@ -25,6 +26,7 @@ const ProductListItems = ({ product }) => {
           </S.BtnGroup>
         </S.ProductInfo>
       </S.ProductInfoWrapper>
+      </S.ProductWrapperGroup>
       <S.Actions>
         <Button onClick={() => removeFromCart(id)}>
           <DeleteOutlinedIcon color="primary" />
