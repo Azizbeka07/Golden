@@ -2,7 +2,7 @@ import React from "react";
 import Header from "components/Header";
 import { Link } from "react-router-dom";
 import CatalogListItems from "components/CatalogListItems";
-import { catalogListData } from "./data";
+import { catalogListData } from "./data"; 
 import { Container } from "components/Container/style";
 import { Title } from "components/WhyUs/style";
 import { AllCategoryBtn } from "components/CategoryList/style";

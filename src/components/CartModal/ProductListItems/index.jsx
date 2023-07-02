@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import DeleteOutlinedIcon from "@mui/icons-material/DeleteOutlined";
 import * as S from "./style";
-import MainContext from "reducer/CartContext";
+import MainContext from "context/CartContext";
 
 const ProductListItems = ({ product }) => {
   const { image, name, currentPrice, id } = product;

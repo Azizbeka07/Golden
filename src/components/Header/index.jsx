@@ -8,7 +8,7 @@ import * as Style from "./style";
 import { CartIcon, LogoIcon, PhoneLogo } from "assets/images/svgIcons";
 import like from "assets/images/like.png";
 import CartModal from "components/CartModal";
-import MainContext from "reducer/CartContext";
+import MainContext from "context/CartContext";
 import LikeModal from "components/FavoriteModal";
 import FavoriteModal from "components/FavoriteModal";
 import BasicModal from "components/FavoriteModal";

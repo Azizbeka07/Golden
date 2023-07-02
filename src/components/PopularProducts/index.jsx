@@ -15,7 +15,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { ArrowIcon } from "assets/images/svgIcons";
-import MainContext from "reducer/CartContext";
+import MainContext from "context/CartContext";
 
 const PopularProducts = () => {
   const [data, setData] = useState([]);

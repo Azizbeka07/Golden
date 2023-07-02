@@ -5,7 +5,7 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { IconButton } from "@mui/material";
 import Rate from "components/Rate";
-import MainContext from "reducer/CartContext";
+import MainContext from "context/CartContext";
 import * as S from "./style";
 
 const ProductCard = ({ data, select, like }) => {
