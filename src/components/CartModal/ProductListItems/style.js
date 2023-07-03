@@ -8,7 +8,7 @@ const ProductWrapper = styled.div`
   height: 100%;
 
   &:not(:last-child) {
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
   }
 `;
 const ImageWrapper = styled.div`
@@ -47,12 +47,14 @@ const BtnGroup = styled.div`
 `;
 
 const CounterBtn = styled.button`
+  display: flex;
+  align-items: center;
   width: 16px;
   height: 16px;
   color: ${Colors.dark};
 
   &:disabled {
-    color: ${Colors.lightGray};
+    color: ${Colors.borderColor};
   }
 `;
 
