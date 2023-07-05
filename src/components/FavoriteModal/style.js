@@ -1,11 +1,20 @@
-const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 400,
-    bgcolor: 'background.paper',
-    border: '2px solid #000',
-    boxShadow: 24,
-    p: 4,
-  };
+import styled from "styled-components";
+import { Box } from "@mui/system";
+import { Colors } from "utils";
+
+const FavoriteBox = styled(Box)`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 836px;
+  height: 500px;
+  transform: translate(-50%, -50%);
+  background-color: ${Colors.light};
+  box-shadow: 24px;
+`;
+
+const FavoriteBody = styled.div`
+  padding: 16px, 40px;
+`;
+
+export { FavoriteBox, FavoriteBody };

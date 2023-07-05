@@ -9,7 +9,6 @@ import { CartIcon, LogoIcon, PhoneLogo } from "assets/images/svgIcons";
 import like from "assets/images/like.png";
 import CartModal from "components/CartModal";
 import MainContext from "context/CartContext";
-import LikeModal from "components/FavoriteModal";
 import FavoriteModal from "components/FavoriteModal";
 import BasicModal from "components/FavoriteModal";
 
@@ -18,7 +17,7 @@ const Header = () => {
   const [cartModal, setCartModal] = useState(false);
   const [likeModal, setLikeModal] = useState(false);
   const { cartItems, likeItems } = useContext(MainContext);
-
+  console.log(likeItems);
   const handleClick = () => {
     setBurger(!burger);
   };
@@ -90,7 +89,7 @@ const Header = () => {
               handleModal={handleModal}
               data={cartItems}
             />
-          <BasicModal likeModal={likeModal} handleLike={handleLike} />
+          <BasicModal likeModal={likeModal} handleLike={handleLike}  data={likeItems} />
           </Container>
           <BurgerMenu open={burger} handleClick={handleClick} />
         </Style.HeaderNavbar>

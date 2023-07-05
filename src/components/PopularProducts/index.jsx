@@ -66,8 +66,8 @@ const PopularProducts = () => {
             <SwiperSlide key={el?.id}>
               <ProductCard
                 data={el}
-                select={cartItems.find((item) => item.id == el.id)}
-                like={likeItems.find((item) => item.id == el.id)}
+                select={cartItems?.find((item) => item.id == el.id)}
+                like={likeItems?.find((item) => item.id == el.id)}
               />
             </SwiperSlide>
           ))}

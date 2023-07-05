@@ -43,7 +43,7 @@ export default function CartModal({ cartModal, handleModal, data }) {
                         </S.ProductList>
                     ) : (
                         <S.EmptyTitle>
-                            Корзина на данный момент пуста 🤷‍♂️🤷‍♂️🤷‍♂️
+                            Корзина на данный момент пустаa 
                         </S.EmptyTitle>
                     )}
                 </S.ModalBoxBody>
