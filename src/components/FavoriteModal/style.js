@@ -13,8 +13,8 @@ const FavoriteBox = styled(Box)`
   box-shadow: 24px;
 `;
 
-const FavoriteBody = styled.div`
-  padding: 16px, 40px;
+const FavoriteModalBody = styled.div`
+  padding: 16px 40px;
 `;
 
-export { FavoriteBox, FavoriteBody };
+export { FavoriteBox, FavoriteModalBody };

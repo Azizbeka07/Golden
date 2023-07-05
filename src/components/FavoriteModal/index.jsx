@@ -1,5 +1,4 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import * as S from "./style";
 import { CloseBtn, HeaderTitle, ModalBoxHeader, } from "components/CartModal/style";
@@ -20,11 +19,13 @@ export default function BasicModal({ likeModal, handleLike, data }) {
             <CloseIcon />
           </CloseBtn>
         </ModalBoxHeader>
-        <S.FavoriteBody>
-          {data.map((el) => (
+        <S.FavoriteModalBody isEmpty={data.length}>
+        {data.length }
+                         
+          {/* {data.map((el) => (
             <p>{el.name}</p>
-          ))}
-        </S.FavoriteBody>
+          ))} */}
+        </S.FavoriteModalBody>
         
       </S.FavoriteBox>
     </Modal>
