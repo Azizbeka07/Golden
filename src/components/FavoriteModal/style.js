@@ -11,6 +11,7 @@ const FavoriteBox = styled(Box)`
   transform: translate(-50%, -50%);
   background-color: ${Colors.light};
   box-shadow: 24px;
+  overflow: auto;
 `;
 
 const FavoriteModalBody = styled.div`

@@ -1,8 +1,13 @@
 import * as React from "react";
 import Modal from "@mui/material/Modal";
 import * as S from "./style";
-import { CloseBtn, HeaderTitle, ModalBoxHeader, } from "components/CartModal/style";
+import {
+  CloseBtn,
+  HeaderTitle,
+  ModalBoxHeader,
+} from "components/CartModal/style";
 import { CloseIcon } from "assets/images/svgIcons";
+import FavoriteListItem from "./FavoriteListItem";
 
 export default function BasicModal({ likeModal, handleLike, data }) {
   return (
@@ -19,14 +24,10 @@ export default function BasicModal({ likeModal, handleLike, data }) {
             <CloseIcon />
           </CloseBtn>
         </ModalBoxHeader>
-        <S.FavoriteModalBody isEmpty={data.length}>
-        {data.length }
-                         
-          {/* {data.map((el) => (
-            <p>{el.name}</p>
-          ))} */}
+        <S.FavoriteModalBody>
+          {data.length &&
+            data.map((el) => <FavoriteListItem key={el.id} favorite={el} />)}
         </S.FavoriteModalBody>
-        
       </S.FavoriteBox>
     </Modal>
   );

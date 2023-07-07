@@ -45,7 +45,3 @@ export default function Rate({ mark }) {
         </Box>
     );
 }
-
-
-// Rest
-// spread
