@@ -1,16 +1,16 @@
 import React, { useContext, useEffect, useState } from "react";
+import Badge from "@mui/material/Badge";
 import BurgerMenu from "./BurgerMenu";
 import HeaderTop from "./HeaderTop";
 import { Container } from "components/Container/style";
-import Badge from "@mui/material/Badge";
 import * as Style from "./style";
 
 import { CartIcon, LogoIcon, PhoneLogo } from "assets/images/svgIcons";
 import like from "assets/images/like.png";
 import CartModal from "components/CartModal";
 import MainContext from "context/CartContext";
-import FavoriteModal from "components/FavoriteModal";
 import BasicModal from "components/FavoriteModal";
+import CatalogModal from "components/СatalogModal";
 
 const Header = () => {
   const [burger, setBurger] = useState(false);
@@ -18,9 +18,11 @@ const Header = () => {
   const [likeModal, setLikeModal] = useState(false);
   const { cartItems, likeItems } = useContext(MainContext);
   console.log(likeItems);
+
   const handleClick = () => {
     setBurger(!burger);
   };
+
 
   const handleModal = () => {
     setCartModal(!cartModal);
@@ -37,6 +39,10 @@ const Header = () => {
       window.document.body.style.overflow = "auto";
     }
   });
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   return (
     <>
@@ -55,7 +61,7 @@ const Header = () => {
               </Style.LogoLink>
               <Style.HeaderNavLinkList>
                 <Style.NavLink to="/">Главная</Style.NavLink>
-                <Style.NavLink to="/">Каталог</Style.NavLink>
+                <Style.NavLink onClick={handleOpen}> Каталог</Style.NavLink>
                 <Style.NavLink to="/discount">Оптовая продажа</Style.NavLink>
                 <Style.NavLink to="/about-us">О нас</Style.NavLink>
               </Style.HeaderNavLinkList>
@@ -93,6 +99,7 @@ const Header = () => {
           </Container>
           <BurgerMenu open={burger} handleClick={handleClick} />
         </Style.HeaderNavbar>
+        <CatalogModal open={open} handleOpen={handleOpen} handleClose={handleClose} />
       </Style.HeaderWrapper>
     </>
   );
