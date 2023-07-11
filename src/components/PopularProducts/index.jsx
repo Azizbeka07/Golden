@@ -14,7 +14,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import { ArrowIcon } from "assets/images/svgIcons";
+import { ArrowIcon } from "assets/imgs/svgIcons/svgIcons";
 import MainContext from "context/CartContext";
 
 const PopularProducts = () => {

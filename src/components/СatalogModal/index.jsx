@@ -7,8 +7,8 @@ import Box from "@mui/material/Box";
 import * as S from "./style.js";
 import { Typography } from "@mui/material";
 
-import image_1 from "assets/images/Categories/category_1.png";
-import image_2 from "assets/images/Categories/category_2.png";
+import image_1 from "assets/images/PopularProducts/Product1.png";
+import image_2 from "assets/images/PopularProducts/Product2.png";
 
 
 function TabPanel(props) {

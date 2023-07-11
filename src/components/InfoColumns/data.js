@@ -1,5 +1,5 @@
-import image_1 from "assets/images/InfoColumns/info_1.png";
-import image_2 from "assets/images/InfoColumns/info_2.png";
+import image_1 from "assets/images/InfoColumns/ProductPage1.png";
+import image_2 from "assets/images/InfoColumns/ProductPage2.png";
 
 const infoData = [
     {

@@ -6,7 +6,7 @@ const ProductImageSwiper = ({ image }) => {
     <S.ImageWrapper>
       <img
         style={{
-          width: "500px",
+          width: "506px",
           objectFit: "contain",
         }}
         src={image}

@@ -5,7 +5,7 @@ import HeaderTop from "./HeaderTop";
 import { Container } from "components/Container/style";
 import * as Style from "./style";
 
-import { CartIcon, LogoIcon, PhoneLogo } from "assets/images/svgIcons";
+import { CartIcon, LogoIcon, PhoneLogo } from "assets/imgs/svgIcons/svgIcons";
 import like from "assets/images/like.png";
 import CartModal from "components/CartModal";
 import MainContext from "context/CartContext";
@@ -31,7 +31,6 @@ const Header = () => {
   const handleLike = () => {
     setLikeModal(!likeModal);
   };
-
 
   useEffect(() => {
     if (burger) {
@@ -62,9 +61,9 @@ const Header = () => {
               </Style.LogoLink>
               <Style.HeaderNavLinkList>
                 <Style.NavLink to="/">Главная</Style.NavLink>
-                <Style.NavLink onClick={handleOpen} >
+                <Style.NavLink onClick={handleOpen}>
                   Каталог
-                    <KeyboardArrowDownIcon color="primary" />
+                  <KeyboardArrowDownIcon color="primary" />
                 </Style.NavLink>
                 <Style.NavLink to="/discount">Оптовая продажа</Style.NavLink>
                 <Style.NavLink to="/about-us">О нас</Style.NavLink>

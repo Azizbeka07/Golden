@@ -1,10 +1,11 @@
-import image_1 from "assets/images/Categories/category_1.png";
-import image_2 from "assets/images/Categories/category_2.png";
-import image_3 from "assets/images/Categories/category_3.png";
-import image_4 from "assets/images/Categories/category_4.png";
-import image_5 from "assets/images/Categories/category_5.png";
-import image_6 from "assets/images/Categories/category_6.png";
-import image_7 from "assets/images/Categories/category_7.png";
+import image_1 from "assets/images/Categories/CategoryPage_1.png";
+import image_2 from "assets/images/Categories/CategoryPage_2.png";
+import image_3 from "assets/images/Categories/CategoryPage_3.png";
+import image_4 from "assets/images/Categories/CategoryPage_4.png";
+import image_5 from "assets/images/Categories/CategoryPage5.png";
+import image_6 from "assets/images/Categories/CategoryPage6.png";
+import image_7 from "assets/images/Categories/CategoryPage7.png";
+import image_8 from "assets/images/Categories/CategoryPage_8.png"
 
 const catalogListData = [
     {
@@ -47,7 +48,7 @@ const catalogListData = [
     },
     {
         id: 7,
-        image: image_1,
+        image: image_8,
         text: "Замки для раздевалок",
     },
 ];

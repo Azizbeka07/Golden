@@ -6,7 +6,7 @@ import {
   HeaderTitle,
   ModalBoxHeader,
 } from "components/CartModal/style";
-import { CloseIcon } from "assets/images/svgIcons";
+import { CloseIcon } from "assets/imgs/svgIcons/svgIcons";
 import FavoriteListItem from "./FavoriteListItem";
 import MainContext from "context/CartContext";
 

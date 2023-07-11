@@ -14,7 +14,7 @@ const CatalogBox = styled.div`
   background: ${Colors.light};
   box-shadow: 0px 4px 18px -2px rgba(0, 0, 0, 0.10);
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 60%;
   transform: translate(-50%, 26.5%);
 `;

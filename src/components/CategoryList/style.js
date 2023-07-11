@@ -17,27 +17,29 @@ const CategoryList = styled.ul`
   ${adaptiveValue("margin-top", 64, 24)}
 `;
 
+
 const CategoryListItem = styled.li`
   max-width: 600px;
   width: 100%;
+  max-height: contain;
   background-color: ${Colors.lightGray};
   ${adaptiveValue("padding", 40, 20)}
 `;
 
 const ListImage = styled.img`
-  max-width: 250px;
+  max-width: 600px;
   width: 100%;
   height: auto;
   display: block;
   margin-left: auto;
   object-fit: contain;
-  background: ${Colors.light};
+  background: ${Colors.lightgray};
 `;
 
 const ListTitle = styled.h3`
   ${adaptiveValue("font-size", 22, 14)}
   ${adaptiveValue("line-height", 34, 24)}
-    ${adaptiveValue("margin-top", 25, 12)}
+    /* ${adaptiveValue("margin-top", 25, 12)} */
 `;
 
 const ListLink = styled(Link)`
