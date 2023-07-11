@@ -11,7 +11,7 @@ import CartModal from "components/CartModal";
 import MainContext from "context/CartContext";
 import BasicModal from "components/FavoriteModal";
 import CatalogModal from "components/СatalogModal";
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const Header = () => {
   const [burger, setBurger] = useState(false);
@@ -24,7 +24,6 @@ const Header = () => {
     setBurger(!burger);
   };
 
-
   const handleModal = () => {
     setCartModal(!cartModal);
   };
@@ -32,6 +31,7 @@ const Header = () => {
   const handleLike = () => {
     setLikeModal(!likeModal);
   };
+
 
   useEffect(() => {
     if (burger) {
@@ -62,7 +62,10 @@ const Header = () => {
               </Style.LogoLink>
               <Style.HeaderNavLinkList>
                 <Style.NavLink to="/">Главная</Style.NavLink>
-                <Style.NavLink onClick={handleOpen}> Каталог <KeyboardArrowDownIcon color="primary" /> </Style.NavLink>
+                <Style.NavLink onClick={handleOpen} >
+                  Каталог
+                    <KeyboardArrowDownIcon color="primary" />
+                </Style.NavLink>
                 <Style.NavLink to="/discount">Оптовая продажа</Style.NavLink>
                 <Style.NavLink to="/about-us">О нас</Style.NavLink>
               </Style.HeaderNavLinkList>
@@ -96,11 +99,19 @@ const Header = () => {
               handleModal={handleModal}
               data={cartItems}
             />
-          <BasicModal likeModal={likeModal} handleLike={handleLike}  data={likeItems} />
+            <BasicModal
+              likeModal={likeModal}
+              handleLike={handleLike}
+              data={likeItems}
+            />
           </Container>
           <BurgerMenu open={burger} handleClick={handleClick} />
         </Style.HeaderNavbar>
-        <CatalogModal open={open} handleOpen={handleOpen} handleClose={handleClose} />
+        <CatalogModal
+          open={open}
+          handleOpen={handleOpen}
+          handleClose={handleClose}
+        />
       </Style.HeaderWrapper>
     </>
   );

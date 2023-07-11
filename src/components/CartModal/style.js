@@ -14,6 +14,7 @@ const ModalBox = styled(Box)`
   height: 500px;
   overflow-y: auto;
   background-color: #fff;
+  box-shadow: 0px 4px 18px -2px rgba(0, 0, 0, 0.10);
 `;
 
 const CloseBtn = styled.button`

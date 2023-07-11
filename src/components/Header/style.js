@@ -50,6 +50,7 @@ const UserActions = styled.div`
     ${adaptiveValue("gap", 30, 15)}
 `;
 
+
 const PhoneContent = styled.a`
     ${Flex.alignCenter};
     gap: 8px;

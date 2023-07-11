@@ -13,7 +13,6 @@ const CatalogBox = styled.div`
   padding: 32px;
   background: ${Colors.light};
   box-shadow: 0px 4px 18px -2px rgba(0, 0, 0, 0.10);
-
   position: absolute;
   top: 50%;
   left: 60%;
