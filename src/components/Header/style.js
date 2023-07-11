@@ -42,6 +42,7 @@ const NavLink = styled(Link)`
     ${adaptiveValue("font-size", 20, 14)}
     line-height: 24px;
     color: ${Colors.dark};
+    ${Flex.alignCenter}
 `;
 
 const UserActions = styled.div`

@@ -11,6 +11,7 @@ import CartModal from "components/CartModal";
 import MainContext from "context/CartContext";
 import BasicModal from "components/FavoriteModal";
 import CatalogModal from "components/СatalogModal";
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const Header = () => {
   const [burger, setBurger] = useState(false);
@@ -61,7 +62,7 @@ const Header = () => {
               </Style.LogoLink>
               <Style.HeaderNavLinkList>
                 <Style.NavLink to="/">Главная</Style.NavLink>
-                <Style.NavLink onClick={handleOpen}> Каталог</Style.NavLink>
+                <Style.NavLink onClick={handleOpen}> Каталог <KeyboardArrowDownIcon color="primary" /> </Style.NavLink>
                 <Style.NavLink to="/discount">Оптовая продажа</Style.NavLink>
                 <Style.NavLink to="/about-us">О нас</Style.NavLink>
               </Style.HeaderNavLinkList>

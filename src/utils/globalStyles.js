@@ -11,6 +11,9 @@ export const GlobalStyles = createGlobalStyle`
         list-style: none;
         text-decoration: none;
     }
+    .css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop{
+        background: transparent !important;
+    }
 
     .swiper {
         width: 100%;
@@ -90,6 +93,8 @@ export const GlobalStyles = createGlobalStyle`
         background-color: transparent;
         cursor: pointer;
     }
+
+     
 
     
 `;
