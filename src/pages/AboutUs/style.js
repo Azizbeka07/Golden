@@ -109,6 +109,10 @@ const StatisticContent = styled.div`
   }
 `;
 
+const Programmer = styled.div`
+  
+`;
+
 const StatisticContentBox = styled.div`
   ${Flex.alignCenter};
   flex-direction: column;
