@@ -109,15 +109,12 @@ const StatisticContent = styled.div`
   }
 `;
 
-const Programmer = styled.div`
-  
-`;
-
 const StatisticContentBox = styled.div`
   ${Flex.alignCenter};
   flex-direction: column;
   ${adaptiveValue("gap", 16, 8)}
 `;
+
 
 const Count = styled.h2`
   ${adaptiveValue("font-size", 72, 48)}
