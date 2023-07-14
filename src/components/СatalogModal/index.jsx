@@ -5,7 +5,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import * as S from "./style.js";
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 
 import image_1 from "assets/images/PopularProducts/Product1.png";
 import image_2 from "assets/images/PopularProducts/Product2.png";
@@ -83,7 +83,7 @@ export default function CatalogModal({ open, handleCatalog, handleClose }) {
                 <Tab label="Замки для шкафчиков" {...a11yProps(6)} />
                 <Tab label="Замки для раздевалок" {...a11yProps(7)} />
               </Tabs>
-              <TabPanel value={value} index={0}>
+              <TabPanel className="tab-panel" value={value} index={0}>
                 <S.Tabsimage src={image_1} alt="img" />
               </TabPanel>
               <TabPanel value={value} index={1}>
@@ -108,6 +108,7 @@ export default function CatalogModal({ open, handleCatalog, handleClose }) {
               <S.Tabsimage src={image_2} alt="img" />
               </TabPanel>
             </Box>
+            <S.CatalogButton>Смотреть все</S.CatalogButton>
           </S.CatalogBox>
         </S.CatalogWarpper>
       </Modal>

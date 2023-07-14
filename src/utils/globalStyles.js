@@ -15,9 +15,16 @@ export const GlobalStyles = createGlobalStyle`
         background: transparent !important;
     }
 
+
     .swiper {
         width: 100%;
         height: 100%;
+    }
+
+    .tab-panel {
+        display: flex !important;
+        text-align: start !important;
+        justify-content: flex-start !important;
     }
 
     .swiper-slide {
