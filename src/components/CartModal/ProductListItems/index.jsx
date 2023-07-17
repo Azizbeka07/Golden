@@ -6,7 +6,7 @@ import * as S from "./style";
 import MainContext from "context/CartContext";
 
 const ProductListItems = ({ product }) => {
-  const { image, name, currentPrice, id } = product;
+  const { image, name, currentPrice, id, quantity } = product;
   const { removeFromCart } = useContext(MainContext);
   const [count, setCount] = useState(1);
 
@@ -30,9 +30,9 @@ const ProductListItems = ({ product }) => {
           <S.ProductInfo>
             <S.ProductInfoTitle>{name}</S.ProductInfoTitle>
             <S.BtnGroup>
-              <S.CounterBtn onClick={() => decrement()} disabled={count == 1} > ➖ </S.CounterBtn>
+              <S.CounterBtn onClick={() => decrement()} disabled={count == 1} > -</S.CounterBtn>
               <S.ProductCount>{count}</S.ProductCount>
-              <S.CounterBtn onClick={() => increment()}> ➕ </S.CounterBtn>
+              <S.CounterBtn onClick={() => increment()}> + </S.CounterBtn>
             </S.BtnGroup>
           </S.ProductInfo>
         </S.ProductInfoWrapper>
@@ -42,7 +42,7 @@ const ProductListItems = ({ product }) => {
           <DeleteOutlinedIcon color="primary" />
           <S.DeleteText>Удалить</S.DeleteText>
         </Button>
-        <S.CurrentPrice>{currentPrice}</S.CurrentPrice>
+        <p>{(currentPrice *  count).toLocaleString()}</p>
       </S.Actions>
     </S.ProductWrapper>
   );
