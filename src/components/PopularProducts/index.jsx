@@ -14,7 +14,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import { ArrowIcon } from "assets/imgs/svgIcons/svgIcons";
 import MainContext from "context/CartContext";
 
 const PopularProducts = () => {
@@ -44,10 +43,11 @@ const PopularProducts = () => {
           <Title>Наши популярные продукты</Title>
           <S.PopularSwiperNavigation>
             <SwiperNavBtn ref={prevElRef}>
-              <ArrowIcon />
+              {/* <ArrowIcon /> */}
             </SwiperNavBtn>
             <SwiperNavBtn ref={nextElRef}>
-              <ArrowIcon style={{ transform: "rotate(180deg)" }} />
+              {/* img
+               */}
             </SwiperNavBtn>
           </S.PopularSwiperNavigation>
         </S.PopularHeader>
